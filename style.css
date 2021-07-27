@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root{
+    --primary-color:#2A9D8F;
+    --secondary-color:#264653;
+}
+
+*{
+    font-family: 'Space Mono', monospace;
+}
+
+.index{
+    background-image: url('/img/02.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.angleOfTri{
+    background-image: url('/img/01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.areaOfTri{
+    background-image: url('/img/03.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.hyp{
+    background-image: url('/img/05.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz{
+    background-image: url('/img/07.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+    text-align: center;
+}
+.section{
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 2rem 1rem;
+}
+
+h1, h2, h3{
+    color: whitesmoke;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    background-color: #21b6ff;
+    width: 100px;
+    height: 100px;
+    margin: 0.2rem .2rem .4rem;
+    padding: 1rem;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(0, 75, 145);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(0, 75, 145) ;
+}
+
+.col a:hover .box{
+    background-color: #4c0cc4;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.inputBox{
+    padding: 1rem;
+    margin: 1rem 1rem 1.5rem 0.2rem;
+    height: 15px;
+    width: 40px;
+    overflow: scroll;
+    outline: none;
+}
+
+.inputBox::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.inputBox1{
+    background-color: #f16d19;
+    border: 2px solid #fa9c0c;
+    color: whitesmoke;
+}
+
+.inputBox2{
+    background-color: #007A93;
+    border: 2px solid#04A1AB;
+    color: whitesmoke;
+    overflow: scroll;
+}
+
+
+  .inputBox3{
+      background-color: #0C7228;
+      border: 2px solid #29961A;
+      color: whitesmoke;
+  }
+
+  /* Buttons */
+
+  .btn{
+    display: block;
+    margin: 0 auto 1rem;
+    padding:0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: whitesmoke;
+  }
+
+  .btn1{
+    background-color: #e94925;
+    border: 1px solid #9a2f17;
+  }
+
+  .btn1:hover{
+      background-color: #E0213A;
+  }
+
+  .btn2{
+      background-color:#00879A ;
+      border: 1px solid #004168;
+  }
+
+  .btn2:hover{
+      background-color: #00486D;
+  }
+
+  .btn3{
+      background-color: #127B25;
+      border: 1px solid #004E3F;
+  }
+
+  .btn3:hover{
+      background-color: #005D36;
+  }
+
+  .btn4{
+      background-color:#B8004E;
+      border: 1px solid #28063D;
+  }
+
+  .btn4:hover{
+      background-color: #3E0341;
+  }
+
+/* Back Button */
+
+  .backCTA{
+      margin: 2rem auto 0rem;
+      width: fit-content;
+      padding: 0.5rem 1rem;
+      border-radius: 1.5rem;
+      cursor: pointer;
+  }
+
+  .back1, .back1 a{
+    background-color: #e94925;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+  .back1 a:hover{
+      border-bottom: 2px solid #9a2f17;
+  }
+
+  .back2, .back2 a{
+    background-color: #00879A;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+  .back2 a:hover{
+      border-bottom: 2px solid #00486D;
+  }
+
+  .back3, .back3 a{
+      background-color: #127B25;
+      color: whitesmoke;
+      font-weight: bold;
+  }
+
+  .back3 a:hover{
+      border-bottom: 2px solid #004E3F;
+  }
+
+  .back4, .back4 a{
+    background-color: #B8004E;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+  .back4 a:hover{
+      border-bottom: 2px solid #28063D;
+  }
+
+/* Output */
+  .output{
+      margin: auto;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 1rem;
+      width: fit-content;
+      color: whitesmoke;
+  }
+
+  .output1{
+    border: 2px solid #9a2f17;
+    background-color: #e94925;
+  }
+
+  .output2{
+    border: 2px solid #004168;
+    background-color: #00879A;
+  }
+
+  .output3{
+      border: 2px solid #004E3F;
+      background-color: #29961A;
+  }
+
+  .output4{
+      border: 2px solid #8A014A;
+      background-color: #C4004E;
+  }
+
+  .label{
+      font-weight: bold;
+      display: inline-block;
+      color: whitesmoke;
+  }
+
+  .areaForm{
+      text-align: left;
+  }
+
+  .areaBox{
+      display: none;
+  }
+
+  .error{
+      display: none;
+  }
+
+  .radio{
+      padding: 0.5rem 1rem;
+      white-space: normal;
+      color: whitesmoke;
+  }
+
+  .radio input{
+      cursor: pointer;
+      padding: 0.5rem 0.5rem;
+      display: inline-block;
+  }
+
+  .radio label{
+      cursor: pointer;
+      padding: 0.5rem 0.5rem 0.5rem 0;
+      display: inline-block;
+      color: whitesmoke;
+  }
+
+  .footer{
+      width: 100%;
+      min-height:  6vh;
+  }
+
+
+
+.footerList{
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.footerLink{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.footerLink a{
+    color: whitesmoke;
+}
+

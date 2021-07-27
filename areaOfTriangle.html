@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Fun with Triangles | Area of Triangle</title>
+  </head>
+  <body class="areaOfTri">
+    <div class="main">
+      <div class="section">
+        <div class="backCTA back2">
+          <i class="fas fa-chevron-left"></i>
+          <a href="/index.html">Go Back</a>
+        </div>
+        <h1>Calculate Area</h1>
+        <h3>Select an option to calculate the area</h3>
+
+        <!-- Select an option to calculate Area -->
+        <form class="areaForm">
+          <div class="radio">
+            <label for="area1" class="label">
+              <input type="radio" id="area1" name="area" value="area1" >
+              If you have base and height length
+            </label>
+          </div>
+          <div class="radio">
+            <label for="area2" class="label">
+              <input type="radio" id="area2" name="area" value="area2" >
+              If you have length of 3 sides
+            </label>
+          </div>
+          <div class="radio">
+            <label for="area3" class="label">
+              <input type="radio" id="area3" name="area" value="area3" >
+              If you have length of 2 sides and included angle
+            </label>
+          </div>
+        </form>
+        <!-- Area Calculation for 1st option -->
+        <div style="margin: 1rem 0" class="areaBox">
+          <div class="triangle">
+            <img src="/img/triangle-height.png" alt="" height="120px" />
+          </div>
+          <form class="form formAreaCalc">
+            <label class="label">
+              Base=
+              <input
+                type="number"
+                class=" inputBox inputBox2 inputSide inputOption1"
+                min="0.0001"
+                step="0.00001"
+                required
+              />
+            </label>
+            <label class="label">
+              Height=
+              <input
+                type="number"
+                class="inputBox inputBox2 inputSide inputOption1"
+                min="0.0001"
+                step="0.00001"
+                required
+              />
+            </label>
+            <button class="btn btn2" id="submitBtn">Calculate</button>
+          </form>
+          <h2>Area Calculated:</h2>
+          <div class="output output2">
+            <label class="label">Area=</label>
+            <div style="display: inline" class="areaOutput">
+              1/2*Base*Height
+            </div>
+          </div>
+        </div>
+        <!-- Area Calculation for 2nd option -->
+        <div style="margin: 1rem 0" class="areaBox">
+          <div class="triangle">
+            <img src="/img/images.png" alt="" height="120px" />
+          </div>
+          <form class="form formAreaCalc">
+            <label class="label">
+              a=
+              <input
+                type="number"
+                class="inputBox inputBox2 inputSide inputOption2"
+                min="0.0001"
+                step="0.00001"
+                required
+              />
+            </label>
+            <label class="label">
+              b=
+              <input
+                type="number"
+                class="inputBox inputBox2 inputSide inputOption2"
+                min="0.0001"
+                step="0.00001"
+                required
+              />
+            </label>
+            <label class="label">
+              c=
+              <input
+                type="number"
+                class="inputBox inputBox2 inputSide inputOption2"
+                min="0.0001"
+                step="0.00001"
+                required
+              />
+            </label>
+            <p class="label error" style="color: brown">
+              Enter valid side lengths such that each side length should be less
+              than sum of other two sides
+            </p>
+            <button class="btn btn2" id="submitBtn">Calculate</button>
+          </form>
+          <h2>Area Calculated:</h2>
+          <div class="output output2">
+            <label class="label">Area=</label>
+            <div style="display: inline" class="areaOutput">
+              <span style="font-size: 1.8rem">√</span
+              ><span style="border-top: 2px solid whitesmoke; padding-top: 0.1rem"
+                >s(s-a)(s-b)(s-c)</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Area Calculation for 3rd Option -->
+        <div style="margin: 1rem 0" class="areaBox">
+          <div class="triangle">
+            <img src="/img/included_angle_1.png" alt="" height="120px" />
+          </div>
+          <form class="form formAreaCalc">
+            <label class="label">
+              b=
+              <input
+                type="number"
+                class="inputBox inputBox2 inputSide inputOption3"
+                min="0.0001"
+                step="0.00001"
+                required
+              />
+            </label>
+            <label class="label">
+              c=
+              <input
+                type="number"
+                class="inputBox inputBox2 inputSide inputOption3"
+                min="0.0001"
+                step="0.00001"
+                required
+              />
+            </label>
+            <label class="label">
+              ∠A(deg)=
+              <input
+                type="number"
+                class="inputBox inputBox2 inputSide inputOption3"
+                min="0.0001"
+                step="0.00001"
+                max="180"
+                required
+              />
+            </label>
+            <button class="btn btn2" id="submitBtn">Calculate</button>
+          </form>
+          <h2>Area Calculated:</h2>
+          <div class="output output2">
+            <label class="label">Area=</label>
+            <div style="display: inline" class="areaOutput">
+              1/2*b*c*sin(A)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer ">
+        <ul class="footerList">
+            <li class="footerLink">
+                <a href="https://github.com/Husain01" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li class="footerLink">
+                <a href="https://twitter.com/itswhoissane" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="footerLink">
+                <a href="https://www.linkedin.com/in/hussain-bhagat/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="footerLink">
+                <a href="https://www.instagram.com/itswhoissane/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="footerLink">
+                <a href="https://husainbhagat.netlify.app/" target="_blank">
+                    <i class="fas fa-briefcase"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="areaOfTriangle.js"></script>
+  </body>
+</html>
